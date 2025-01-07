@@ -4,10 +4,10 @@ Chrome extension that helps you collect email addresses from web pages efficient
 
 ## Features
 
-- **Smart Email Collection**: 
+- **Smart Email Collection**:
   - Collects emails from active tab content
   - Supports dynamic content (AJAX, SPA)
-  - Handles HTML attributes (aria-label, title, data-*)
+  - Handles HTML attributes (aria-label, title, data-\*)
   - RFC 5322 compliant email validation
 - **Batch Processing**:
   - Sequential or parallel website scanning
@@ -21,6 +21,10 @@ Chrome extension that helps you collect email addresses from web pages efficient
   - CSV export option
   - Loading indicators
   - Error handling with user feedback
+
+## Privacy Policy
+
+Our privacy policy can be found at: [PRIVACY_POLICY.md](PRIVACY_POLICY.md) or [here](https://buraketmen.github.io/email-collector/)
 
 ## License
 
