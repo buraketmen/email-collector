@@ -2,6 +2,8 @@
 
 Chrome extension that helps you collect email addresses from web pages efficiently.
 
+![Collect Emails](./public/screenshot.png)
+
 ## Features
 
 - **Smart Email Collection**:
