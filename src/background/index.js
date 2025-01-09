@@ -1,6 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ isAutoscanning: false });
 });
+
 const TAB_LOAD_TIMEOUT = 10000; // 10 seconds for each tab
 const BATCH_SIZE = 10;
 // RFC 5322 Official Standard Email Regex with word boundary checks
@@ -364,6 +365,10 @@ function waitForTabLoad(tabId, timeout) {
 
 async function ensureContentScriptInjected(tabId) {
   try {
+    if (!chrome.scripting?.executeScript) {
+      return;
+    }
+
     await chrome.scripting.executeScript({
       target: { tabId },
       function: () => {
