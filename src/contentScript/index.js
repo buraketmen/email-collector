@@ -110,7 +110,7 @@ const scanPageContent = async () => {
             await performScan();
             resolve();
           }
-        }, 1000)
+        }, 1500)
       );
 
       // Start observing
